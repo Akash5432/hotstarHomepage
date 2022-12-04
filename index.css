@@ -6,6 +6,12 @@ body{
     background-color: #131a28;
     margin:auto;
     padding: 0%;
+    color: white;
+}
+
+.mydark{
+    background-color: white;
+    color: rgb(8, 8, 8);
 }
        
        /* Header Section */
@@ -30,6 +36,18 @@ header{
     font-size: 18px;
 
 }
+
+.mode > img{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+}
+.mode{
+    background: #131a28;
+    margin-left: 10%;
+}
+
+
 
     /* Crousal Section */
     .carouselHeight{
@@ -78,6 +96,10 @@ header{
         
         margin-left:-12%;
         /* margin-right:4px; */
+    }
+ 
+    .gridSize > .imgSize:hover{
+        transform: scale(1.05);
     }
  
 /* //footer */
