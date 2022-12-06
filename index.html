@@ -9,7 +9,8 @@
         <script src="hotstar.js"></script> 
     </head>
     <body>
-     
+      <div id="couponMain"><!--Coupon Div Start-->
+      </div>
         <header>
              <nav class="navbar navbar-inverse navHeight"> 
                 <div class="container-fluid">
@@ -35,14 +36,19 @@
                     <li><a href="#"><span class="glyphicon glyphicon-user loginList"></span> Sign Up</a></li>
                     <li><a href="#"><span class="glyphicon glyphicon-log-in loginList"></span> Login</a></li>
                   </ul>
-                  <button class="mode"  onclick="changeMode()"><img src="image/mode.jpg" alt="mode button"></button>  
+                  <!-- <button class="mode"  onclick="changeMode()"><img src="image/mode.jpg" alt="mode button"></button>   -->
+                  <img src="sun.svg" id="icon">
                 </div>
               </nav>    
                       
         </header>
+<!--coupons  -->
+      <!-- <div id="coupon">
+        <button onclick="closecoupon()">&times;</button>
+        <h1>this is discount coupon</h1>
+      </div> -->
                
-
-        <!--Crousal Section-->
+<!--Crousal Section-->
         <div id="myCarousel" class="carousel slide carouselHeight" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -86,10 +92,8 @@
               <span class="glyphicon glyphicon-chevron-right"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
-
-
-          <!--Grid Basis-->
+        </div>
+ <!--Grid Basis-->
 <div class="main">
         <div class="heading">
             <span>Latest & Trending</span>
@@ -110,14 +114,22 @@
         </div>        
 
             <div class="row">
-                <div class="col-xs-4 gridSize"><img src="popular/anupama.jpg" class="imgSize" alt="movie1"></div>
-                <div class="col-xs-4 gridSize"><img src="popular/bigboss.jpg" class="imgSize" alt="movie2"></div>
-                <div class="col-xs-4 gridSize"><img src="popular/coffee.jpg" class="imgSize" alt="movie3"></div>
-                <div class="col-xs-4 gridSize"><img src="popular/dore.jpg" class="imgSize" alt="movie4"></div>
-                <div class="col-xs-4 gridSize"><img src="popular/gum.jpg" class="imgSize" alt="movie5"></div>
-                <div class="col-xs-4 gridSize"><img src="popular/liger.jpg" class="imgSize" alt="movie6"></div>
-                <div class="col-xs-4 gridSize"><img src="popular/hanuman.jpg" class="imgSize" alt="movie6"></div>
-                <div class="col-xs-4 gridSize"><img src="popular/imli.jpg" class="imgSize" alt="movie7"></div>
+                <div class="col-xs-4 gridSize"><img src="popular/anupama.jpg" class="imgSize" alt="movie1">
+                </div>
+                <div class="col-xs-4 gridSize"><img src="popular/bigboss.jpg" class="imgSize" alt="movie2">
+                </div>
+                <div class="col-xs-4 gridSize"><img src="popular/coffee.jpg" class="imgSize" alt="movie3">
+                </div>
+                <div class="col-xs-4 gridSize"><img src="popular/dore.jpg" class="imgSize" alt="movie4">
+                </div>
+                <div class="col-xs-4 gridSize"><img src="popular/gum.jpg" class="imgSize" alt="movie5">
+                </div>
+                <div class="col-xs-4 gridSize"><img src="popular/liger.jpg" class="imgSize" alt="movie6">
+                </div>
+                <div class="col-xs-4 gridSize"><img src="popular/hanuman.jpg" class="imgSize" alt="movie6">
+                </div>
+                <div class="col-xs-4 gridSize"><img src="popular/imli.jpg" class="imgSize" alt="movie7">
+                </div>
             </div>    
             
             <div class="heading">
@@ -125,18 +137,28 @@
             </div>        
     
                 <div class="row">
-                    <div class="col-xs-4 gridSize"><img src="multiplex/00.jpg" class="imgSize" alt="movie1"></div>
-                    <div class="col-xs-4 gridSize"><img src="multiplex/12man.jpg" class="imgSize" alt="movie2"></div>
-                    <div class="col-xs-4 gridSize"><img src="multiplex/19.jpg" class="imgSize" alt="movie3"></div>
-                    <div class="col-xs-4 gridSize"><img src="multiplex/cadaver.jpg" class="imgSize" alt="movie4"></div>
-                    <div class="col-xs-4 gridSize"><img src="multiplex/good.jpg" class="imgSize" alt="movie5"></div>
-                    <div class="col-xs-4 gridSize"><img src="multiplex/tanakana.jpg" class="imgSize" alt="movie6"></div>
-                    <div class="col-xs-4 gridSize"><img src="multiplex/vattam.jpg" class="imgSize" alt="movie6"></div>
-                    <div class="col-xs-4 gridSize"><img src="multiplex/kaun.jpg" class="imgSize" alt="movie7"></div>
-                </div>             
+                    <div class="col-xs-4 gridSize"><img src="multiplex/00.jpg" class="imgSize" alt="movie1">
+                    </div>
+                    <div class="col-xs-4 gridSize"><img src="multiplex/12man.jpg" class="imgSize" alt="movie2">
+                    </div>
+                    <div class="col-xs-4 gridSize"><img src="multiplex/19.jpg" class="imgSize" alt="movie3">
+                    </div>
+                    <div class="col-xs-4 gridSize"><img src="multiplex/cadaver.jpg" class="imgSize" alt="movie4">
+                    </div>
+                    <div class="col-xs-4 gridSize"><img src="multiplex/good.jpg" class="imgSize" alt="movie5">
+                    </div>
+                    <div class="col-xs-4 gridSize"><img src="multiplex/tanakana.jpg" class="imgSize" alt="movie6">
+                    </div>
+                    <div class="col-xs-4 gridSize"><img src="multiplex/vattam.jpg" class="imgSize" alt="movie6">
+                    </div>
+                    <div class="col-xs-4 gridSize"><img src="multiplex/kaun.jpg" class="imgSize" alt="movie7">
+                    </div>
+                </div>    
+          
+  </div>
+<!-- </div> -->
+<!--Coupon Div closed here -->
 
-
-</div>
           <!--Footer Section-->
     <footer>
             <div class="container-fluid">
@@ -165,7 +187,26 @@
               </div>
             </div>
     </footer>
+    <!--Coupon code-->
+    <div id="coupon">
+      <button id="couponButton" onClick="closeCoupon()">&times;</button>
+      <!-- <img src="images/black-friday-gb6f251358_1920.jpg" alt="coupon" height="400px" width="400px"/> -->
+    </div>
 
+    <script>
+        window.onload = loadCoupon()
+    </script>
+    <script>
+      let icon = document.getElementById("icon");
+      icon.onclick = function(){
+          document.body.classList.toggle("dark-theme");
+          if(document.body.classList.contains("dark-theme")){
+              icon.src="moon.svg";
+          }else{
+              icon.src="sun.svg";
+          }
+      }
+  </script>
 
     </body>
 </html>
