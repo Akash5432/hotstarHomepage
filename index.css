@@ -77,13 +77,13 @@ header{
 #coupon{
     height:600px;
     width:500px;
-    background-image:url('00.jpg');
+    background-image:url('image/hotstar-offers.jpg');
     background-repeat: no-repeat;
     background-size: 100% 300px ;
     margin-left:35%;
     position:absolute;
     z-index:100;
-    margin-top:-90%;
+    margin-top:-75%;
     visibility: hidden;
 }
 #couponButton{
