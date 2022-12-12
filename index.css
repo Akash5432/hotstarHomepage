@@ -99,16 +99,18 @@ header{
         transition:all 200ms ease;
     
 }
-    
-.couponButton:hover{
-    transform:scale(1.15);
-
+.location{
+    background-color: #131a28;
+    border: none;
 }
-
-
-
-
-
+.location > img {
+    height: 45px;
+    width: 41px;
+    margin-right: 1px;
+    margin-top: -37px;
+    border-radius: 100%;
+}
+    
     /* Crousal Section */
     .carouselHeight{
         height:400px;
